@@ -16,9 +16,9 @@ import {
 } from '../types';
 
 const QSCANNER_BINARY_URL =
-  'https://github.com/qualys/qualys-container-scan/releases/latest/download/qscanner.gz';
+  'https://github.com/nelssec/qualys-container-scan/releases/latest/download/qscanner.gz';
 const QSCANNER_SHA256_URL =
-  'https://github.com/qualys/qualys-container-scan/releases/latest/download/qscanner.sha256';
+  'https://github.com/nelssec/qualys-container-scan/releases/latest/download/qscanner.sha256';
 
 export class QScannerRunner {
   private config: QScannerConfig;
