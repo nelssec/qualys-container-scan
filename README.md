@@ -35,7 +35,7 @@ jobs:
         run: docker build -t myapp:${{ github.sha }} .
 
       - name: Qualys Container Scan
-        uses: qualys/qualys-container-scan@v1
+        uses: nelssec/qualys-container-scan@v1
         with:
           qualys_access_token: ${{ secrets.QUALYS_ACCESS_TOKEN }}
           qualys_pod: ${{ vars.QUALYS_POD }}
@@ -105,7 +105,7 @@ For individual repositories, create repository secrets and variables with the sa
 Set maximum allowed vulnerabilities per severity:
 
 ```yaml
-- uses: qualys/qualys-container-scan@v1
+- uses: nelssec/qualys-container-scan@v1
   with:
     qualys_access_token: ${{ secrets.QUALYS_ACCESS_TOKEN }}
     qualys_pod: ${{ vars.QUALYS_POD }}
@@ -121,7 +121,7 @@ Set maximum allowed vulnerabilities per severity:
 Use centralized policies defined in Qualys:
 
 ```yaml
-- uses: qualys/qualys-container-scan@v1
+- uses: nelssec/qualys-container-scan@v1
   with:
     qualys_access_token: ${{ secrets.QUALYS_ACCESS_TOKEN }}
     qualys_pod: ${{ vars.QUALYS_POD }}
