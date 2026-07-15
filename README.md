@@ -1,5 +1,7 @@
 # Qualys Container Scan
 
+> ⚠️ **Unofficial project.** This is a personal project and is not affiliated with, endorsed by, or supported by Qualys, Inc.
+
 GitHub Action for scanning container images for vulnerabilities using Qualys Container Security.
 
 ## Features
